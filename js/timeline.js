@@ -4,7 +4,7 @@ function initScrollAnimations() {
   $('#content-wrapper').css('display','block');
   var controller = $.superscrollorama();
  
-  controller.pin($('#scene1'), 14000, {
+  controller.pin($('#scene1'), 20000, {
                   anim: (new TimelineLite())
 				   .append(
                    TweenMax.from($('#introtext'), 0.7, 

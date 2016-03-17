@@ -148,6 +148,39 @@ section {
 .foreground img {
 	max-width: 100%;
 }
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #fdfdfd;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #50efab;
+}
+::-webkit-scrollbar-track {
+  background: #909090;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #959595;
+}
+::-webkit-scrollbar-track:active {
+  background: #FFF;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
 @media only screen and (max-width: 952px) {
     .all {
         opacity: 0 !important;

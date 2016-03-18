@@ -34,14 +34,14 @@ function initScrollAnimations() {
                    )
 				   .append(
                    TweenMax.fromTo($('#move-mid'), 1, 
-                                    {css:{bottom: -300}, immediateRender:true}, 
+                                    {css:{bottom: -200}, immediateRender:true}, 
                                     {css:{bottom: -650}}),
 									-0.4
 								
                    )			
 				   .append(
-                   TweenMax.fromTo($('#move-fore'), 1.3, 
-                                    {css:{bottom: -50}, immediateRender:true}, 
+                   TweenMax.fromTo($('#move-fore'), 1.2, 
+                                    {css:{bottom: 50}, immediateRender:true}, 
                                     {css:{bottom: -650}}),
 									-1
 					)

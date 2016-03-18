@@ -98,7 +98,7 @@ body {
 }
 #introtext {
 	position: absolute;
-	top: 415px;
+	top: 405px;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 100%;
@@ -152,26 +152,26 @@ body {
 	transform: rotate(180deg);
 }
 @-webkit-keyframes flash {
-  0%   { opacity: 0; letter-spacing: 1.7; }
+  0%   { opacity: 0.3; letter-spacing: 1.7; }
   60% { opacity: 1; letter-spacing: 1; }
-  100% {opacity: 0; letter-spacing: 1.7;}
+  100% {opacity: 0.3; letter-spacing: 1.7;}
 }
 @-moz-keyframes flash {
-  0%   { opacity: 0; letter-spacing: 1.7; }
+  0%   { opacity: 0.3; letter-spacing: 1.7; }
   60% { opacity: 1; letter-spacing: 1; }
-  100% {opacity: 0; letter-spacing: 1.7;}
+  100% {opacity: 0.3; letter-spacing: 1.7;}
 }
 @-o-keyframes flash {
-  0%   { opacity: 0; letter-spacing: 1.7; }
+  0%   { opacity: 0.3; letter-spacing: 1.7; }
   60% { opacity: 1; letter-spacing: 1; }
-  100% {opacity: 0; letter-spacing: 1.7;}
+  100% {opacity: 0.3; letter-spacing: 1.7;}
 }
 @keyframes flash {
-  0%   { opacity: 0; letter-spacing: 1.7; }
+  0%   { opacity: 0.3; letter-spacing: 1.7; }
   60% { opacity: 1; letter-spacing: 1; }
-  100% {opacity: 0; letter-spacing: 1.7;}
+  100% {opacity: 0.3; letter-spacing: 1.7;}
 }
-#scene1 { width: 100%; height: 17000px; overflow: hidden !important; }
+#scene1 { width: 100%; height: 19500px; overflow: hidden !important; }
 #fling-it, #move-it, #fling-it-right { position: fixed; top: 0px; left: 0px; z-index: 9999 !important;}
 section {
 	position:absolute;
@@ -180,10 +180,21 @@ section {
 	width: 100%;
 	max-width: 100%;
 	overflow: hidden;
-	height: 17000px;
+	height: 19500px;
 	z-index: 1 !important;
 }
-
+.backg {
+	position: fixed;
+	bottom: -210px;
+	left: 0px;
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	z-index: 2 !important;
+}
+.backg img {
+	max-width: 100%;
+}
 .midground {
 	position: fixed;
 	bottom: 0px;
@@ -191,7 +202,7 @@ section {
 	width: 100%;
 	max-width: 100%;
 	height: 100%;
-	z-index: 2 !important;
+	z-index: 3 !important;
 }
 .midground img {
 	max-width: 100%;
@@ -260,7 +271,6 @@ section {
 	background: linear-gradient(to bottom, rgba(64,167,165,1) 0%, rgba(171,209,173,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40a7a5', endColorstr='#abd1ad', GradientType=0 );
 }
-
 .spinner-text {position:fixed;top:41.5%;left:45%;margin:16px 0 0 35px;font-size:15px;font-family: 'Droid Sans', sans-serif;color:#EEE;letter-spacing:3.5px;font-weight:400}
 .spinner {
   margin:0;

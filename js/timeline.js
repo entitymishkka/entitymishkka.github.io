@@ -1,3 +1,13 @@
+$(document).ready(function() {
+   window.setTimeout("fadeMyDiv();", 1000); //call fade in 3 seconds
+ }
+)
+function fadeMyDiv() {
+   $("#loading").fadeOut('slow');
+}
+$(window).load(function(){
+   $("body").css("overflow","auto");
+});
 $('body').css('opacity','1');
 initScrollAnimations();
 function initScrollAnimations() {
@@ -6,20 +16,27 @@ function initScrollAnimations() {
  
   controller.pin($('#scene1'), 17000, {
                   anim: (new TimelineLite())
+				  	.append(
+                   TweenMax.from($('#welcome'), 1, 
+                                    {css:{opacity:1, top: 90, scaleX: 1, scaleY: 1}, immediateRender:true}, 
+                                    {css:{opacity: 0, top: 60, scaleX: 0, scaleY: 0}}),
+									-2
+					)
 				   .append(
-                   TweenMax.from($('#introtext'), 0.9, 
+                   TweenMax.from($('#introtext'), 1.9, 
                                     {css:{opacity:0, top: -200}, immediateRender:true}, 
-                                    {css:{opacity:0.8, top: 0}}),
-					-1
+                                    {css:{opacity:0.9, top: 0}}),
+					-1.3
 					)
                    .append(
                    TweenMax.fromTo($('#fling-it'), 1, 
                                     {css:{left:0, top: 900, opacity: 0}, immediateRender:true}, 
-                                    {css:{left:100, top: 20, opacity: 1}})
+                                    {css:{left:100, top: 20, opacity: 1}}),
+					-0.1
 									
                    )
 				   .append(
-                   TweenMax.fromTo($('#fling-it-right'), 1, 
+                   TweenMax.fromTo($('#fling-it-right'), 1.1, 
                                     {css:{left:820, top: 600, opacity: 0}, immediateRender:true}, 
                                     {css:{left:840, top: 200, opacity: 1}}),
 							-0.8
@@ -30,7 +47,7 @@ function initScrollAnimations() {
                    TweenMax.fromTo($('#sky'), 1, 
                                     {css:{top: -8500}, immediateRender:true}, 
                                     {css:{top: 0}}),
-									-1.3
+									-1.6
                    )
 				   .append(
                    TweenMax.fromTo($('#move-mid'), 1, 
@@ -47,8 +64,8 @@ function initScrollAnimations() {
 					)
 					.append(
                    TweenMax.from($('#introtext'), 1, 
-                                    {css:{opacity:0.8}, immediateRender:true}, 
-                                    {css:{opacity:0}})
+                                    {css:{opacity:0.9, 'letter-spacing':'10px'}, immediateRender:true}, 
+                                    {css:{opacity:0, 'letter-spacing':'40px'}})
 					
 					)
 
@@ -101,7 +118,7 @@ function initScrollAnimations() {
 									
                    )
 				 .append(
-                   TweenMax.fromTo($('#infobox'), 0.6, 
+                   TweenMax.fromTo($('#infobox'), 0.9, 
                                     {css:{right: 50}, immediateRender:true}, 
                                     {css:{right: -800}}),
 									-1.4

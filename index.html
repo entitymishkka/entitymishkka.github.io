@@ -4,25 +4,42 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='css/styles.css' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
+<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-touch-icon-76x76.png">
+<link rel="icon" type="image/png" href="favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="favicons/manifest.json">
+<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#80c6b6">
 </head>
 <body>
+  <div class="loading" id="loading">
+    <span class="spinner-text">LOADING</span>
+    <span class="spinner"><img src="img/spinner.png"></span>
+  </div>
 <div class="sky" id="sky"></div>
 <div id="clear"></div>
 <div class="all">
+<div class="welcome" id="welcome">&bull; SCROLL TO START &bull;<br><img src="img/scroll.png"></div>
 <section>
 		<div id="scene1">
 		<div class="stars" id="stars"></div>
 		<div class="belt" id="belt"></div>
-			<div id="introtext">&bull;ORION&bull;</div>
-			<img id="fling-it" style="max-width: 27%;" src="img/b_p.png">
-			<img id="fling-it-right" width="10%" src="img/s_p.png">
+		<div id="introtext">&bull;ORION&bull;</div>
+		<img id="fling-it" style="max-width: 27%;" src="img/b_p.png">
+		<img id="fling-it-right" width="10%" src="img/s_p.png">
 		</div>
 </section>	
+			<div class="midground" id="move-mid"><img src="img/mid.png"></div>
+			<div class="foreground" id="move-fore"><img src="img/fore.png"></div>
 			<div id="infobox">
-			The Orion correlation theory is a hypothesis in alternative Egyptology. Its central claim is that there is a correlation between the location of the three largest pyramids of the Giza pyramid complex and Orion's Belt of the constellation Orion, and that this correlation was intended as such by the builders of the pyramids. The stars of Orion were associated with Osiris, the god of rebirth and afterlife, by the ancient Egyptians.
+			The Orion correlation theory is a hypothesis in alternative Egyptology. 
+			Its central claim is that there is a correlation between the location of the three largest pyramids of the Giza pyramid complex and Orion's Belt of the constellation Orion, and that this correlation was intended as such by the builders of the pyramids. The stars of Orion were associated with Osiris, the god of rebirth and afterlife, by the ancient Egyptians.
 			</div>
-		<div class="midground" id="move-mid"><img src="img/mid.png"></div>
-		<div class="foreground" id="move-fore"><img src="img/fore.png"></div>
 </div>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.2/TweenMax.min.js"></script>

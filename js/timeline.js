@@ -40,7 +40,7 @@ function initScrollAnimations() {
 								
                    )			
 				   .append(
-                   TweenMax.fromTo($('#move-fore'), 0.9, 
+                   TweenMax.fromTo($('#move-fore'), 1.3, 
                                     {css:{bottom: -50}, immediateRender:true}, 
                                     {css:{bottom: -650}}),
 									-1

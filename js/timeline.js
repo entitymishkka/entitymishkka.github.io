@@ -57,7 +57,7 @@ function initScrollAnimations() {
 								
                    )			
 				   .append(
-                   TweenMax.fromTo($('#move-fore'), 1.2, 
+                   TweenMax.fromTo($('#move-fore'), 1.1, 
                                     {css:{bottom: 50}, immediateRender:true}, 
                                     {css:{bottom: -650}}),
 									-1
@@ -72,14 +72,14 @@ function initScrollAnimations() {
 				   .append(
                    TweenMax.fromTo($('#fling-it-right'), 1, 
                                     {css:{left:840, top: 200, scaleX: 1, scaleY: 1}, immediateRender:true}, 
-                                    {css:{left:190, top: 420, scaleX: 3, scaleY: 3}})
+                                    {css:{left:190, top: 360, scaleX: 2.7, scaleY: 2.7}})
 							
 									
                    )
                    .append(
                    TweenMax.fromTo($('#fling-it'), 1, 
                                     {css:{left:100, top: 20, scaleX: 1, scaleY: 1}, immediateRender:true}, 
-                                    {css:{left:640, top: 10, scaleX: 0.2, scaleY: 0.2}}),
+                                    {css:{left:640, top: 10, scaleX: 0.4, scaleY: 0.4}}),
 									-1
 									
                    )
@@ -97,30 +97,27 @@ function initScrollAnimations() {
 									0.5																		
                    )
 				 .append(
-                   TweenMax.fromTo($('#infobox'), 0.6, 
-                                    {css:{opacity: 0, right: 0}, immediateRender:true}, 
-                                    {css:{opacity: 1, right: 50}}),
-									-0.7
-																							
+                   TweenMax.fromTo($('#infobox'), 1.1, 
+                                    {css:{opacity: 0, bottom: -250}, immediateRender:true}, 
+                                    {css:{opacity: 1, bottom: 50}}),
+									-1															
                    )
 				.append(
                    TweenMax.fromTo($('#fling-it-right'), 1, 
                                     {css:{left:190, top: 420}, immediateRender:true}, 
                                     {css:{left:210, top: 120}}),
-							2.1
-									
+							2.1	
                    )
                    .append(
                    TweenMax.fromTo($('#fling-it'), 2, 
                                     {css:{left:640, top: 10}, immediateRender:true}, 
                                     {css:{left:680, top: 80}}),
-									-1.4
-									
+									-1.4	
                    )
 				 .append(
                    TweenMax.fromTo($('#infobox'), 0.9, 
-                                    {css:{right: 50}, immediateRender:true}, 
-                                    {css:{right: -800}}),
+                                    {css:{bottom: 50}, immediateRender:true}, 
+                                    {css:{bottom: -250}}),
 									-1.4
 																							
                    )
